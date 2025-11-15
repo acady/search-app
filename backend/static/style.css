@@ -1,0 +1,102 @@
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  max-width: 900px;
+  margin: 2rem auto;
+  line-height: 1.4;
+  color: #222;
+}
+
+h1 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+section {
+  margin-bottom: 2rem;
+  padding: 1rem 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: .5rem;
+  background: #fafafa;
+}
+
+.result-card,
+.related-card {
+  border: 1px solid #ccc;
+  border-radius: .5rem;
+  padding: .75rem 1rem;
+  margin-bottom: .75rem;
+  background: #fff;
+}
+
+.result-card .header {
+  display: flex;
+  justify-content: space-between;
+  font-size: .95rem;
+  margin-bottom: .5rem;
+}
+
+.result-card .doctype {
+  color: #666;
+  font-size: .8rem;
+  border: 1px solid #ccc;
+  border-radius: .3rem;
+  padding: 0 .4rem;
+  background: #f0f0f0;
+}
+
+.snippet {
+  font-family: monospace;
+  white-space: pre-wrap;
+  font-size: .8rem;
+  background: #fdfdfd;
+  border-left: 3px solid #ccc;
+  padding-left: .5rem;
+  margin-bottom: .5rem;
+}
+
+.keywords {
+  font-size: .8rem;
+  color: #333;
+}
+
+.chat {
+  border: 2px solid #444;
+  background: #fff;
+}
+
+.chatlog {
+  background: #f8f8f8;
+  border: 1px solid #ccc;
+  border-radius: .5rem;
+  padding: 1rem;
+  max-height: 250px;
+  overflow-y: auto;
+  font-size: .9rem;
+  line-height: 1.4;
+  margin-bottom: .75rem;
+  white-space: pre-wrap;
+}
+
+.chatline-user {
+  background: #d9ecff;
+  padding: .5rem .75rem;
+  border-radius: .5rem;
+  margin-bottom: .5rem;
+}
+
+.chatline-bot {
+  background: #e8ffe5;
+  padding: .5rem .75rem;
+  border-radius: .5rem;
+  margin-bottom: 1rem;
+  border-left: 3px solid #5c9a5c;
+}
+
+.chatinputrow {
+  display: flex;
+  gap: .5rem;
+}
+
+chatinputrow input {
+  flex: 1;
+}

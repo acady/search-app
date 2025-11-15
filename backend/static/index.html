@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <title>Dokumenten-Suche & Chat</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>🔎 Dokumenten-Suche & Chat</h1>
+
+  <section class="upload">
+    <h2>Datei hochladen</h2>
+    <input type="file" id="fileInput" />
+    <button id="uploadBtn">Hochladen & Indexieren</button>
+    <div id="uploadResult"></div>
+  </section>
+
+  <section class="search">
+    <h2>Stichwortsuche (Solr)</h2>
+    <input type="text" id="searchInput" placeholder="Suchbegriff..." />
+    <button id="searchBtn">Suchen</button>
+    <div id="resultsContainer"></div>
+  </section>
+
+  <section class="chat">
+    <h2>Chat mit deinem Dokumentenbestand</h2>
+    <div id="chatLog" class="chatlog"></div>
+    <div class="chatinputrow">
+      <input type="text" id="chatInput" placeholder="Frag mich etwas über deine Dokumente..." />
+      <button id="chatSend">Senden</button>
+    </div>
+  </section>
+
+  <section class="graph">
+    <h2>Verbundene Dokumente zu Keyword (Neo4j)</h2>
+    <input type="text" id="kwInput" placeholder="z.B. projekt" />
+    <button id="kwBtn">Zeig Beziehungen</button>
+    <div id="kwResult"></div>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>
